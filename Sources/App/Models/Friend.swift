@@ -5,7 +5,7 @@
 //  Created by Jussi Suojanen on 16/12/2018.
 //
 
-import FluentSQLite
+import FluentMySQL
 import Vapor
 
 final class Friend: Codable {
@@ -22,7 +22,7 @@ final class Friend: Codable {
     }
 }
 
-extension Friend: SQLiteModel { }
+extension Friend: MySQLModel { }
 
 /// Allows `Friend` to be used as a dynamic migration.
 extension Friend: Migration { }
